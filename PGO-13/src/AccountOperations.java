@@ -1,5 +1,5 @@
 public interface AccountOperations {
-    public void sprStanuKonta();
-    public void wykonaniePrzelewu();
-    public void dokonanieWplaty();
+    double sprStanuKonta();
+    public void wykonaniePrzelewu(double kwota,BankAccount konto) throws AccountOperationException;
+    public void dokonanieWplaty(double kwota) ;
     }
